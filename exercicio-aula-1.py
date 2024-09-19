@@ -84,7 +84,10 @@ while status!=True and status!=False:
 
 # Exercício 7:
 # Peça ao usuário para inserir seu nome e um número, depois exiba o nome repetido esse número de vezes.
-
+nome=input('nome: ')
+num=int(input('vezes: '))
+print(f'{(nome+'\n')*num}')
+# print((nome+'\n')*num)
 #################################################################
 
 # Exercício 8:
