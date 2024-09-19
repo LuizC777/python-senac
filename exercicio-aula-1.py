@@ -29,11 +29,22 @@ print(f'a soma de {num} com {VALOR} e igual a {resultado}')
 # "Meu nome é [nome_completo], tenho [idade] anos e ganho R$ [salario_mensal] por mês."
 
 ##* Extra Formatar o salario_mensal como moeda
-
+import locale
+locale.setlocale(locale.LC_ALL, 'pt-br.UTF-8')
+nome_completo='luiz claro'
+idade=20
+salario_mensal=2000
+sal_for=locale.currency(salario_mensal, grouping=True)
+        #f'{numero:,.2f}'.replace('.','x').replace(',','.').replace('x',',')
+print(f'Meu nome e {nome_completo}, tenho {idade} anos e ganho {sal_for} por mes.')
 #################################################################
 
 # Exercício 4:
 # Solicite ao usuário dois números inteiros e exiba a soma dos números.
+num1=int(input('digite o numero 1: '))
+num2=int(input('digite o numero 2: '))
+res=num1+num2
+print(f'{num1}+{num2}={res}')
 
 #################################################################
 
@@ -41,7 +52,8 @@ print(f'a soma de {num} com {VALOR} e igual a {resultado}')
 # Peça ao usuário que insira um número decimal (float) e exiba o dobro desse número.
 # Saida = O dobro de ? é ?.
 # exemplo = entrada 5 então a saida seria "O dobro de 5 é 10"
-
+num1=float(input('insira um numero: '))
+print(f'o dobro de {num1} e {num1*2}')
 #################################################################
 
 # Exercício 6:
@@ -52,15 +64,22 @@ print(f'a soma de {num} com {VALOR} e igual a {resultado}')
 ## temos que tratar o valor de entrada "sim" ou "não com .strip().lower()
 # saida =[nome], você está estudando: [esta_estudando].")
 # a variavel [esta_estudando] vai ser igual a true ou false
-
 ######
-
 ## Extra implementar if else
 ## se a variavel [esta_estudando] = True 
 ## saida = [nome], ótimo continue assim!
 ## se não 
 ## saida = [nome], vamos estudar!
-
+nome=input('digite seu nome: ')
+status=''
+while status!=True and status!=False:
+    status=input('esta estudadando?(s/n): ').lower().strip(' ')
+    if status=='s':
+        status=True
+        print(f'{nome},\notimo! continue assim')
+    elif status=='n':
+        status=False
+        print(f'{nome},\nvamos estudar!')
 #################################################################
 
 # Exercício 7:
