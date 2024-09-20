@@ -131,7 +131,11 @@ else:
 
 # Exercício 12:
 # Peça ao usuário para inserir um número inteiro e verifique se é par ou ímpar. Exiba o resultado.
-
+num=int(input('numero: '))
+if num%2==0:
+    print(f'{num} e par')
+else:
+    print(f'{num} e impar')
 #################################################################
 
 # Exercício 13:
@@ -139,7 +143,11 @@ else:
 # O cliente recebe desconto se suas compras forem maiores que 1000 'ou' se for cliente frequente
 ## temos que tratar o valor de entrada "sim" ou "não" com .strip().lower()
 # utilize a conditional if e else
-
+valor=float(input('valor de compra: '))
+cliente=input('e cliente frequente?(s/n): ').lower().strip(' ')
+if cliente=='s' or valor>1000:
+    valor=valor*0.9
+print(f'Valor: R$ {valor:,.2f}'.replace(",","x").replace(".",",").replace("x","."))
 #################################################################
 
 
@@ -149,7 +157,17 @@ else:
 # Média menor que 5: "Reprovado"
 # Média entre 5 e 6: "Recuperação"
 # Média maior ou igual a 7: "Aprovado"
-
+nota1=float(input('nota 1: '))
+nota2=float(input('nota 2: '))
+nota3=float(input('nota 3: '))
+media=(nota1+nota2+nota3)/2
+if media>=7:
+    print('aprovado')
+elif media>=5:
+    print('recuperacao')
+else:
+    print('reprovado')
+print(f'media: {media}')
 #################################################################
 
 # Exercício 15:
@@ -158,7 +176,15 @@ else:
 # Menor que 15: "O clima está frio"
 # Entre 15 e 25: "O clima está agradável"
 # 26 ou mais: "O clima está quente."
-
+temperatura=float(input('temperatura: '))
+clima=''
+if temperatura>=26:
+    clima='quente'
+elif temperatura>=15:
+    clima='agradavel'
+else:
+    clima='frio'
+print(f'o clima esta {clima}')
 #################################################################
 
 # Exercício 16:
@@ -168,7 +194,14 @@ else:
 # Entre 12 e 17 anos: "Você é um adolescente."
 # Entre 18 e 59 anos: "Você é um adulto."
 # 60 anos ou mais: "Você é idoso."
-
-
-
-
+idade=float(input('idade: '))
+tipo=''
+if idade>=60:
+    tipo='idoso'
+elif idade>=18:
+    tipo='adulto'
+elif idade>=12:
+    tipo='adolecente'
+else:
+    tipo='crianca'
+print(f'voce e um/a {tipo}')
