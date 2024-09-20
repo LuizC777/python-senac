@@ -93,17 +93,25 @@ print(f'{(nome+'\n')*num}')
 # Exercício 8:
 # Solicite ao usuário que insira seu peso e altura, calcule seu IMC (Índice de Massa Corporal) e exiba o resultado.
 # Fórmula do IMC: IMC = peso / altura²
-
+peso=float(input('peso: '))
+altura=float(input('altura: '))
+print(f'IMC={peso/(altura**2)}')
 #################################################################
 
 # Exercício 9:
 # Solicite ao usuário que insira a quantidade de horas trabalhadas e o valor da hora. Calcule e exiba o salário bruto.
-
+horas=float(input('horas trabalhadas: '))
+valor_hora=float(input('valor por hora: '))
+valor_final=f'{(valor_hora*horas):,.2f}'.replace(',','x').replace('.',',').replace('x','.')
+print(valor_final)
 #################################################################
 
 # Exercício 10:
 # Solicite ao usuário um valor de produto e uma porcentagem de desconto. Calcule e exiba o valor final com o desconto aplicado.
-
+valor=float(input('valor: '))
+desconto=float(input('desconto: '))
+valor_final=f'{valor-((desconto*valor)/100):,.2f}'.replace(',','x').replace('.',',').replace('x','.')
+print(f"R${valor_final}")
 #################################################################
 
 #Exercício 11:
