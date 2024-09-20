@@ -120,7 +120,13 @@ print(f"R${valor_final}")
 # numero > 0: "O número é positivo."
 # numero < 0: "O número é negativo."
 # numero == 0: "O número é zero."
-
+num=int(input('numero: '))
+if num>0:
+    print('numero positivo')
+elif num<0:
+    print('numero negativo')
+else:
+    print('numero e zero')
 #################################################################
 
 # Exercício 12:
