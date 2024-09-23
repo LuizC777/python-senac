@@ -31,9 +31,9 @@ print(f'a soma de {num} com {VALOR} e igual a {resultado}')
 ##* Extra Formatar o salario_mensal como moeda
 import locale
 locale.setlocale(locale.LC_ALL, 'pt-br.UTF-8')
-nome_completo='luiz claro'
-idade=20
-salario_mensal=2000
+nome_completo=input('nome completo: ')
+idade=int(input('Idade: '))
+salario_mensal=float(input('salário: '))
 sal_for=locale.currency(salario_mensal, grouping=True)
         #f'{numero:,.2f}'.replace('.','x').replace(',','.').replace('x',',')
 print(f'Meu nome e {nome_completo}, tenho {idade} anos e ganho {sal_for} por mes.')
@@ -167,7 +167,7 @@ elif media>=5:
     print('recuperacao')
 else:
     print('reprovado')
-print(f'media: {media}')
+print(f'media: {media:.2f}')
 #################################################################
 
 # Exercício 15:
