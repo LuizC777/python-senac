@@ -91,9 +91,9 @@ print(alunos['aluno2']['nome'])
 # lista 2: valores = "Carlos", 23, "Matemática"
 # Criar um dicionário a partir das listas usando dist() e o zip()
 # Saida: Dicionário criado a partir de listas: [dicionario_aluno]
-lista_1= chaves = "nome", "idade", "curso"
-lista_2= valores = "Carlos", 23, "Matemática"
-pessoa=dict(zip(lista_1,lista_2))
+chaves = ["nome", "idade", "curso"]
+valores = ["Carlos", 23, "Matemática"]
+pessoa=dict(zip(chaves,valores))
 print(pessoa)
 ##################################################
 
