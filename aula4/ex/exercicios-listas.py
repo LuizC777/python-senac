@@ -60,7 +60,5 @@ print(f'gato aparece {animais.count('gato')} vezes na lista.')
 # Crie uma nova lista que contenha apenas os itens únicos (sem duplicatas) e exiba essa lista.
 # Saida: Itens únicos [itens]
 frutas2=list(set(["maçã", "banana", "maçã", "laranja", "banana", "uva"]))
-#frutas_s=set(frutas2)
-#frutas_unicas=list(frutas_s)
 frutas2.sort()
 print(f'itens unicos: {frutas2}')
