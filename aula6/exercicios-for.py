@@ -68,6 +68,16 @@ for c in range(1,20+1):
 # string = "Hello, World!"
 # vogais = "aeiouAEIOU"
 # Conte e imprima o número de vogais em uma string.
+print(''.center(30,'*'))
 string = "Hello, World!"
 vogais = "aeiouAEIOU"
-for vog in string:
+
+def vog_counter(string):
+    vog_count=0
+    for vog in (string).lower().strip(' '):
+        if vog=='a' or vog=='e' or vog=='i' or vog=='o' or vog=='u':
+            vog_count+=1
+    print(vog_count)
+
+vog_counter(string)
+vog_counter(vogais)
