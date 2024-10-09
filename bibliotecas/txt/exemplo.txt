@@ -1,0 +1,2 @@
+1 Olá este e o meu primeiro arquivo de texto criado com python
+3 essa e uma nova linha adicionada ao arquivo
