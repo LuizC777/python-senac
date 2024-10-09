@@ -101,7 +101,7 @@ def escolher_opcao_batata():
 
 def fim():
 
-    print(f'{''.center(10,'*')}\nPedido:\n{nome_cliente}')
+    print(f'{''.center(10,'*')}\n{nome_cliente}\nPedido:')
     if tipo_sanduiche!=(0,0):
         pegar_sanduiche(tipo_sanduiche)
     if tipo_bebida!=(0,0):
